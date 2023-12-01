@@ -1,32 +1,44 @@
-/* beut.css */
 body {
-    background-color: #f0f0f0; /* Light background for contrast */
-    font-family: Arial, sans-serif; /* Optional: Adds a modern font */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling beyond the viewport */
+}
+
+.background-image {
+    background-image: url(aqquisadyya.jpg); /* Replace 'your-image-path.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background behind other elements */
+    display: contents;
 }
 
 .box {
     width: 150px;
     height: 150px;
-    background-image: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient background */
-    color: white; /* White text color */
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with some transparency */
     margin: 10px;
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .box:hover {
-    transform: scale(1.05); /* Slightly increase size on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust hover background color transparency */
 }
 
-/* Optional: Additional styling for the text inside the boxes */
-.box > span {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+#infoContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#infoContent {
+    display:none;
 }
