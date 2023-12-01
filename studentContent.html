@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .box {
+            width: 100%;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .aadya {
+            background-color: #ffadad; /* Light Red */
+            color: #8b0000; /* Dark Red */
+        }
+
+        .rehan {
+            background-color: #ffd700; /* Gold */
+            color: #8b4513; /* Saddle Brown */
+        }
+
+        .tariq {
+            background-color: #90ee90; /* Light Green */
+            color: #006400; /* Dark Green */
+        }
+
+        .riya {
+            background-color: #add8e6; /* Light Blue */
+            color: #000080; /* Navy */
+        }
+
+        .sian {
+            background-color: #ff69b4; /* Hot Pink */
+            color: #800080; /* Purple */
+        }
+
+        .shalang {
+            background-color: #20b2aa; /* Light Sea Green */
+            color: #008080; /* Teal */
+        }
+
+        .manyata {
+            background-color: #ffa07a; /* Light Salmon */
+            color: #cd5c5c; /* Indian Red */
+        }
+
+        .swara {
+            background-color: #ffd700; /* Gold */
+            color: #8b4513; /* Saddle Brown */
+        }
+
+        .rishikesh {
+            background-color: #87ceeb; /* Sky Blue */
+            color: #00008b; /* Dark Blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="box aadya" onclick="showInfo('Aadya')">Aadya</div>
+    <div class="box rehan" onclick="showInfo('Rehan')">Rehan</div>
+    <div class="box tariq" onclick="showInfo('Tariq')">Tariq</div>
+    <div class="box riya" onclick="showInfo('Riya')">Riya</div>
+    <div class="box sian" onclick="showInfo('Sian')">Sian</div>
+    <div class="box shalang" onclick="showInfo('Shalang')">Shalang</div>
+    <div class="box manyata" onclick="showInfo('Manyata')">Manyata</div>
+    <div class="box swara" onclick="showInfo('Swara')">Swara</div>
+    <div class="box rishikesh" onclick="showInfo('Rishikesh')">Rishikesh</div>
+
+    <script>
+        function showInfo(name) {
+            alert("Clicked on " + name);
+            // You can replace the alert with the desired action
+        }
+    </script>
+</body>
+</html>
